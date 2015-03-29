@@ -8,4 +8,5 @@ ADD ipsec-tools.conf /etc/ipsec-tools.conf
 
 ADD run.sh /run.sh
 
-CMD ["/run.sh"]
+#CMD ["/run.sh"]
+CMD ["bash"]
