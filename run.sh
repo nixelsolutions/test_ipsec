@@ -5,4 +5,5 @@ set -e
 service setkey start
 
 # start racoon
-service racoon start
+racoon -dd > /tmp/racoon.log
+ bash
