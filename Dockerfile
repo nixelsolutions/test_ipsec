@@ -8,6 +8,7 @@ RUN mkdir /var/run/racoon
 ADD ipsec-tools.conf /etc/ipsec-tools.conf
 ADD racoon.conf /etc/racoon/racoon.conf
 ADD psk.txt /etc/racoon/psk.txt
+RUN chmod 400 /etc/racoon/psk.txt
 
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
